@@ -16,6 +16,6 @@ What doesnot work:
 Will appreciate any ideas, suggestions, improvements, etc.
 Made by using fabric.js library :)
 
-Also, I created my own stupid templating language XD, the templating engine is the file: template.py, and it modifies the source file: main.html, to produce the final file: index.html. Basically, it just replaces the comments of format <!-- TEMPLATE {FILE-LOCATION} --> with the file in the location :)
+Also, I created my own stupid templating language XD, the templating engine is the file: template.py, and it modifies the source file: main.html, to produce the final file: index.html. Basically, it just replaces the comments of format <!- TEMPLATE {FILE-LOCATION} --> with the file in the location :)
 
 Have a nice day :)
