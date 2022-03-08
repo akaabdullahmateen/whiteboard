@@ -1,0 +1,11 @@
+.canvas-viewport {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: var(--canvas-container-top-margin);
+    left: 0;
+}
+
+.canvas-container {
+    background-color: #ffffff;
+}

@@ -1,0 +1,65 @@
+.controls {
+    width: max-content;
+    height: var(--controls-height);
+    position: absolute;
+    bottom: var(--controls-margin-bottom);
+    right: var(--controls-margin-right);
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--controls-border-color);
+    border-radius: var(--controls-border-radius);
+    background-color: var(--controls-bg-color);
+}
+
+.controls-button {
+    width: var(--controls-button-size);
+    height: var(--controls-button-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: var(--controls-button-border-radius);
+    background-color: var(--controls-bg-color);
+    color: var(--controls-fg-color);
+    transition: 0.2s;
+}
+
+.controls-button svg {
+    color: inherit;
+}
+
+.controls-button:hover {
+    background-color: var(--controls-bg-color-hover);
+    color: var(--controls-fg-color-hover);
+}
+
+.controls-button:active {
+    background-color: var(--controls-bg-color-hover);
+    color: var(--controls-fg-color-hover);
+}
+
+.controls-icon {
+    width: var(--controls-icon-size);
+    height: var(--controls-icon-size);
+}
+
+.zoom-level-control {
+    color: var(--controls-fg-color);
+    width: var(--controls-button-size);
+    height: var(--controls-button-size);
+    font-size: 11px;
+    font-family: var(--font-family-argentum);
+    font-weight: 600;
+    line-height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.zoom-level-control:hover {
+    color: var(--controls-bg-color-hover);
+}

@@ -1,0 +1,78 @@
+.context-menu {
+    width: var(--context-menu-width);
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: var(--context-menu-padding);
+    background-color: var(--context-menu-bg-color);
+    position: absolute;
+    box-shadow: var(--context-menu-box-shadow);
+    visibility: hidden;
+    z-index: 999;
+}
+
+.context-separator {
+    border-bottom: 1px solid var(--context-separator-border-color);
+    margin: var(--context-separator-margin);
+}
+
+.context-button {
+    width: 100%;
+    height: var(--context-button-height);
+    position: relative;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    font-family: var(--font-family-segoe);
+    font-size: var(--context-button-font-size);
+    background-color: var(--context-button-bg-color);
+}
+
+.context-button[disabled],
+.context-button[disabled]:hover,
+.context-button[disabled]:focus,
+.context-button[disabled]:active {
+    background-color: var(--context-button-bg-color-disabled);
+}
+
+.context-button[disabled] .context-label,
+.context-button[disabled]:hover .context-label,
+.context-button[disabled]:focus .context-label,
+.context-button[disabled]:active .context-label {
+    color: var(--context-label-fg-color-disabled);
+}
+
+.context-button[disabled] .context-shortcut,
+.context-button[disabled]:hover .context-shortcut,
+.context-button[disabled]:focus .context-shortcut,
+.context-button[disabled]:active .context-shortcut {
+    color: var(--context-shortcut-fg-color-disabled);
+}
+
+.context-button:hover {
+    background-color: var(--context-button-bg-color-hover);
+}
+
+.context-button:hover .context-label {
+    color: var(--context-label-fg-color-hover);
+}
+
+.context-button:hover .context-shortcut {
+    color: var(--context-shortcut-fg-color-hover);
+}
+
+.context-label {
+    color: var(--context-label-fg-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--context-label-left-margin);
+}
+
+.context-shortcut {
+    color: var(--context-shortcut-fg-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--context-shortcut-right-margin);
+}

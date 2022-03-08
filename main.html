@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Whiteboard</title>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon-ico/apple-touch-icon.png" />
+        <link rel="icon" type="images/png" sizes="16x16" href="resources/favicon-ico/favicon-16x16.png" />
+        <link rel="icon" type="images/png" sizes="32x32" href="resources/favicon-ico/favicon-32x32.png" />
+        <link rel="icon" t.ype="image/x-icon" href="resources/favicon-ico/favicon.ico" />
+        <link rel="manifest" href="resources/favicon-ico/site.webmanifest" />
+
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="styles/root.css" />
+        <link rel="stylesheet" href="styles/main-canvas.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/toolbox.css" />
+        <link rel="stylesheet" href="styles/controls.css" />
+        <link rel="stylesheet" href="styles/toggle-sidebar.css" />
+        <link rel="stylesheet" href="styles/context-menu.css" />
+        <link rel="stylesheet" href="styles/sidebar.css" />
+        <link rel="stylesheet" href="styles/text-menu.css" />
+
+        <script src="scripts/fabric.js"></script>
+        <script src="scripts/initialize.js"></script>
+        <script src="scripts/tools.js"></script>
+        <script src="scripts/context.js"></script>
+        <script src="scripts/whiteboard.js"></script>
+        <script src="scripts/sidebar.js"></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="root">
+            <div class="sidebar" id="sidebar-id">
+                <!-- TEMPLATE {components/sidebar.html} -->
+            </div>
+            <div class="viewport" id="viewport-id">
+                <!-- TEMPLATE {components/header.html} -->
+                <div class="canvas-viewport">
+                    <canvas class="main-canvas" id="c"></canvas>
+                </div>
+                <!-- TEMPLATE {components/toolbox.html} -->
+                <!-- TEMPLATE {components/controls.html} -->
+                <!-- TEMPLATE {components/toggle-sidebar.html} -->
+                <!-- TEMPLATE {components/context-menu.html} -->
+                <!-- TEMPLATE {components/text-menu.html} -->
+            </div>
+        </div>
+    </body>
+</html>

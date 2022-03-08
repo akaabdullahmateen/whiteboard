@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-family-default: "OpenSans", sans-serif;
+    --font-family-logo: "Millenia";
+    --font-family-argentum: "Argentum Sans", sans-serif;
+    --font-family-hasklug: "Hasklug NF", sans-serif;
+    --font-family-segoe: "Segoe UI";
+
+    --bg-color-default: #ffffff;
+    --fg-color-default: #050038;
+    --hover-color-default: #4262ff;
+    --border-color-default: #e0e0e7;
+    --menu-color-default: #36325f;
+    --menu-color-hover: #000000;
+    --pure-black-color: #000000;
+
+    --menu-size-default: 48px;
+    --margin-default: 8px;
+    --padding-default: 8px;
+    --button-size-default: 40px;
+    --icon-size-default: 24px;
+
+    --header-height: 50px;
+    --header-button-size: 40px;
+    --header-icon-size: 20px;
+    --header-bg-color: #ffffff;
+    --header-bg-color-hover: #dedede;
+    --header-fg-color: rgba(0, 0, 0, 0.8);
+    --header-fg-color-hover: #000000;
+    --header-border-color: rgba(0, 0, 0, 0.2);
+    --header-margin-left: 20px;
+    --header-margin-right: 20px;
+    --header-logo-color: #9747ff;
+    --header-logo-padding-right: 20px;
+    --header-board-name-padding-left: 20px;
+
+    --toolbox-height: 50px;
+    --toolbox-button-size: 48px;
+    --toolbox-icon-size: 24px;
+    --toolbox-bg-color: #ffffff;
+    --toolbox-bg-color-hover: #dedede;
+    --toolbox-bg-color-active: #9747ff;
+    --toolbox-fg-color: rgba(0, 0, 0, 0.8);
+    --toolbox-fg-color-hover: rgba(0, 0, 0, 0.8);
+    --toolbox-fg-color-active: #ffffff;
+    --toolbox-border-color: #e5e5e5;
+    --toolbox-margin-bottom: 20px;
+    --toolbox-border-radius: 8px;
+    --toolbox-button-border-radius: 4px;
+    --toolbox-padding: 0px 20px 0px 20px;
+    --toolbox-box-shadow: 0 0 0 1px #0000001a, 0 3px 16px #00000014, 0 2px 6px 1px #00000017;
+
+    --paint-menu-height: 48px;
+    --paint-menu-padding: 0px 20px 0px 20px;
+    --paint-menu-border-radius: 14px 14px 0px 0px;
+    --paint-menu-bg-color: #f0f0f0;
+    --paint-menu-border-color: #c8c8c8;
+    --paint-menu-gap: 5px;
+    --paint-menu-transition-function: cubic-bezier(0.17, 0.53, 0.3, 1);
+    --paint-menu-divider-color: #d7d7d7;
+    --paint-menu-divider-margin: 0px 10px 0px 10px;
+
+    --thickness-button-size: 28px;
+    --thickness-button-border-radius: 4px;
+    --thickness-button-fg-color: #8f8f8f;
+    --thickness-button-bg-color-hover: #e2e2e2;
+    --thickness-button-fg-color-hover: #2d2d2d;
+    --thickness-button-bg-color-active: #9747ff;
+    --thickness-button-fg-color-active: #ffffff;
+
+    --color-button-size: 28px;
+    --color-icon-size: 20px;
+    --color-button-border-color-hover: #a8a8a8;
+    --color-button-border-color-active: #9747ff;
+
+    --controls-height: 40px;
+    --controls-margin-bottom: 20px;
+    --controls-margin-right: 20px;
+    --controls-button-size: 38px;
+    --controls-icon-size: 19px;
+    --controls-bg-color: #ffffff;
+    --controls-bg-color-hover: #9747ff;
+    --controls-fg-color: rgba(0, 0, 0, 0.8);
+    --controls-fg-color-hover: #ffffff;
+    --controls-button-border-radius: 4px;
+    --controls-border-color: rgba(0, 0, 0, 0.2);
+    --controls-border-radius: 4px;
+
+    --toggle-sidebar-size: 48px;
+    --toggle-sidebar-icon-size: 24px;
+    --toggle-sidebar-border-radius: 4px;
+    --toggle-sidebar-bg-color: #ffffff;
+    --toggle-sidebar-bg-color-hover: #9747ff;
+    --toggle-sidebar-fg-color: rgba(0, 0, 0, 0.8);
+    --toggle-sidebar-fg-color-hover: #ffffff;
+    --toggle-sidebar-margin-left: 20px;
+    --toggle-sidebar-margin-bottom: 20px;
+    --toggle-sidebar-border-color: rgba(0, 0, 0, 0.2);
+    --toggle-sidebar-box-shadow: 0 0 0 1px #0000001a, 0 3px 16px #00000014, 0 2px 6px 1px #00000017;
+
+    --context-menu-width: 240px;
+    --context-menu-padding: 8px 0px 8px 0px;
+    --context-menu-bg-color: #ffffff;
+    --context-menu-box-shadow: 0 2px 8px 4px #0000002a, 0 2px 4px 4px #00000014;
+
+    --context-separator-border-color: #dedede;
+    --context-separator-margin: 8px 0px 8px 0px;
+
+    --context-button-height: 22px;
+    --context-button-font-size: 13px;
+    --context-button-bg-color: #ffffff;
+    --context-button-bg-color-hover: #9747ff;
+    --context-button-bg-color-disabled: #ffffff;
+
+    --context-label-fg-color: #333333;
+    --context-label-fg-color-hover: #ffffff;
+    --context-label-fg-color-disabled: #33333377;
+    --context-label-left-margin: 15px;
+
+    --context-shortcut-fg-color: #797979;
+    --context-shortcut-fg-color-hover: #ffffff;
+    --context-shortcut-fg-color-disabled: #79797977;
+    --context-shortcut-right-margin: 15px;
+
+    --sidebar-close-size: 40px;
+    --sidebar-close-margin-right: 10px;
+    --sidebar-close-margin-top: 4px;
+    --sidebar-close-border-radius: 8px;
+    --sidebar-close-bg-color: #ffffff;
+    --sidebar-close-bg-color-hover: #dedede;
+    --sidebar-close-fg-color: rgba(0, 0, 0, 0.8);
+    --sidebar-close-fg-color-hover: #000000;
+    --sidebar-close-icon-size: 24px;
+
+    --settings-sidebar-fg-color: rgba(0, 0, 0, 0.8);
+
+    --settings-title-height: 48px;
+    --settings-title-padding-left: 20px;
+    --settings-title-font-size: 20px;
+
+    --settings-separator-border-color: rgba(0, 0, 0, 0.2);
+
+    --settings-heading-height: 40px;
+    --settings-heading-margin: 20px auto 10px 20px;
+    --settings-heading-font-size: 15px;
+
+    --settings-row-height: 30px;
+    --settings-row-padding-left: 40px;
+    --settings-row-gap: 10px;
+
+    --settings-label-width: 165px;
+    --settings-label-font-size: 13px;
+
+    --settings-input-width: 50px;
+    --settings-input-height: 25px;
+    --settings-input-padding-left: 10px;
+    --settings-input-fg-color: #444444;
+    --settings-input-font-size: 13px;
+    --settings-input-border-radius: 4px;
+    --settings-input-border-color: #232323;
+    --settings-input-border-color-focus: #000000;
+    --settings-input-border-color-error: #ff0000;
+
+    --settings-unit-font-size: 13px;
+
+    --settings-footer-height: 35px;
+    --settings-footer-margin-top: 60px;
+
+    --settings-button-reverse-width: 130px;
+    --settings-button-reverse-height: 35px;
+    --settings-button-reverse-border-color: rgba(0, 0, 0, 0.6);
+    --settings-button-reverse-border-color-hover: #000000;
+    --settings-button-reverse-bg-color: #ffffff;
+    --settings-button-reverse-fg-color: rgba(0, 0, 0, 0.7);
+    --settings-button-reverse-fg-color-hover: rbga(0, 0, 0, 0.8);
+    --settings-button-reverse-font-size: 13px;
+    --settings-button-reverse-border-radius: 4px;
+    --settings-button-reverse-margin-left: 40px;
+
+    --settings-button-width: 80px;
+    --settings-button-height: 35px;
+    --settings-button-bg-color: #9747ff;
+    --settings-button-bg-color-hover: #7033c0;
+    --settings-button-fg-color: #ffffff;
+    --settings-button-font-size: 13px;
+    --settings-button-border-radius: 4px;
+    --settings-button-margin-right: 45px;
+
+    --canvas-container-top-margin: 50px;
+}
+
+@font-face {
+    font-family: TEST;
+    src: url(resources/fonts/test.ttf);
+}

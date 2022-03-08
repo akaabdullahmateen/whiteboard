@@ -1,0 +1,134 @@
+.paint-menu {
+    width: max-content;
+    height: var(--paint-menu-height);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: var(--toolbox-margin-bottom);
+    z-index: 0;
+    padding: var(--paint-menu-padding);
+    border-radius: var(--paint-menu-border-radius);
+    display: flex;
+    flex-direction: row;
+    gap: var(--paint-menu-gap);
+    align-items: center;
+    background-color: var(--paint-menu-bg-color);
+    border: 1px solid var(--paint-menu-border-color);
+    border-bottom: 0px;
+    transition: 0.2s ease;
+}
+
+.paint-menu-divider {
+    height: 100%;
+    border-left: 1px solid var(--paint-menu-divider-color);
+    margin: var(--paint-menu-divider-margin);
+}
+
+.thickness-button {
+    width: var(--thickness-button-size);
+    height: var(--thickness-button-size);
+    border-radius: var(--thickness-button-border-radius);
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--thickness-button-fg-color);
+    transition: 0.2s;
+}
+
+.thickness-button svg {
+    color: inherit;
+}
+
+.thickness-button:hover {
+    background-color: var(--thickness-button-bg-color-hover);
+    color: var(--thickness-button-fg-color-hover);
+}
+
+.thickness-button.active {
+    background-color: var(--thickness-button-bg-color-active);
+    color: var(--thickness-button-fg-color-active);
+}
+
+.color-button {
+    width: var(--color-button-size);
+    height: var(--color-button-size);
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.color-button:hover {
+    border-color: var(--color-button-border-color-hover);
+}
+
+.color-button.active {
+    border-color: var(--color-button-border-color-active);
+}
+
+.color-icon {
+    width: var(--color-icon-size);
+    height: var(--color-icon-size);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.toolbox {
+    width: max-content;
+    height: var(--toolbox-height);
+    padding: var(--toolbox-padding);
+    border-radius: var(--toolbox-border-radius);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: var(--toolbox-margin-bottom);
+    background-color: var(--toolbox-bg-color);
+    border: 1px solid var(--toolbox-border-color);
+    box-shadow: var(--toolbox-box-shadow);
+}
+
+.toolbox-button {
+    width: var(--toolbox-button-size);
+    height: var(--toolbox-button-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: var(--toolbox-button-border-radius);
+    background-color: var(--toolbox-bg-color);
+    color: var(--toolbox-fg-color);
+    transition: 0.2s;
+}
+
+.toolbox-button svg {
+    color: inherit;
+}
+
+.toolbox-button:hover {
+    background-color: var(--toolbox-bg-color-hover);
+    color: var(--toolbox-fg-color-hover);
+}
+
+.toolbox-button.active {
+    background-color: var(--toolbox-bg-color-active);
+    color: var(--toolbox-fg-color-active);
+}
+
+.toolbox-icon {
+    width: var(--toolbox-icon-size);
+    height: var(--toolbox-icon-size);
+}

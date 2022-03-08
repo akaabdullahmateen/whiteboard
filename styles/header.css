@@ -1,0 +1,99 @@
+.header {
+    width: 100%;
+    height: var(--header-height);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--header-bg-color);
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+.header-info {
+    width: max-content;
+    height: var(--header-button-size);
+    position: absolute;
+    top: 50%;
+    left: var(--header-margin-left);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-buttons {
+    width: max-content;
+    height: var(--header-button-size);
+    position: absolute;
+    top: 50%;
+    right: var(--header-margin-right);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: var(--header-logo-color);
+    cursor: pointer;
+    font-family: var(--font-family-logo);
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    border-right: 1px solid var(--header-border-color);
+    padding-right: var(--header-logo-padding-right);
+    transition: 0.2s;
+}
+
+.logo:hover {
+    color: var(--header-fg-color-hover);
+}
+
+.board {
+    color: var(--header-fg-color);
+    cursor: pointer;
+    font-family: var(--font-family-argentum);
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: var(--header-board-name-padding-left);
+    transition: 0.2s;
+}
+
+.board:hover {
+    color: var(--header-fg-color-hover);
+}
+
+.header-button {
+    width: var(--header-button-size);
+    height: var(--header-button-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: var(--header-button-border-radius);
+    background-color: var(--header-bg-color);
+    color: var(--header-fg-color);
+    transition: 0.2s;
+}
+
+.header-button svg {
+    color: inherit;
+}
+
+.header-button:hover {
+    background-color: var(--header-bg-color-hover);
+    color: var(--header-fg-color-hover);
+}
+
+.header-button:active {
+    background-color: var(--header-bg-color-hover);
+    color: var(--header-fg-color-hover);
+}
+
+.header-icon {
+    width: var(--header-icon-size);
+    height: var(--header-icon-size);
+}

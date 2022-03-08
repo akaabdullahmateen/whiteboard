@@ -1,0 +1,114 @@
+:root{
+    --pencil-menu-border-radius: 8px;
+    --pencil-menu-bg-color: #ffffff;
+    --pencil-menu-border-color: rgba(0, 0, 0, 0.2);
+    --pencil-menu-margin-bottom: 80px;
+    --pencil-menu-box-shadow: 0 0 0 1px #0000001a, 0 3px 16px #00000014, 0 2px 6px 1px #00000017;
+    --pencil-menu-color-selector-padding: 20px 15px 15px 15px;
+    --pencil-menu-color-selector-gap: 5px;
+    --pencil-menu-color-selector-bg-color: #ffffff;
+    --pencil-menu-color-selector-bg-color-hover: #dedede;
+    --pencil-menu-color-selector-bg-color-active: #dedede;
+    --pencil-menu-color-selector-button-size: 26px;
+    --pencil-menu-color-selector-icon-size: 16px;
+    --pencil-menu-thickness-selector-padding: 0px 15px 15px 15px;
+    --pencil-menu-thickness-selector-bg-color: #ffffff;
+    --pencil-menu-thickness-selector-bg-color-hover: #dedede;
+    --pencil-menu-thickness-selector-bg-color-active: #dedede;
+    --pencil-menu-thickness-selector-border-radius: 4px;
+    --pencil-menu-thickness-selector-button-size: 40px;
+    --pencil-menu-thickness-selector-icon-size: 16px;
+}
+
+.pencil-menu {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    display: none;
+    bottom: var(--pencil-menu-margin-bottom);
+    background-color: var(--pencil-menu-bg-color);
+    border-radius: var(--pencil-menu-border-radius);
+    box-shadow: var(--pencil-menu-box-shadow);
+    border: 1px solid var(--pencil-menu-border-color);
+}
+
+.pencil-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-selector {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: var(--pencil-menu-color-selector-padding);
+    width: max-content;
+    height: max-content;
+    row-gap: var(--pencil-menu-color-selector-gap);
+    column-gap: var(--pencil-menu-color-selector-gap);
+}
+
+.color-selector-button {
+    background-color: var(--pencil-menu-color-selector-bg-color);
+    width: var(--pencil-menu-color-selector-button-size);
+    height: var(--pencil-menu-color-selector-button-size);
+    border-radius: 50%;
+    border: 0;
+}
+
+.color-selector-button:hover {
+    background-color: var(--pencil-menu-color-selector-bg-color-hover);
+}
+
+.color-selector-button.active {
+    background-color: var(--pencil-menu-color-selector-bg-color-active);
+}
+
+.color-selector-icon {
+    display: block;
+    width: var(--pencil-menu-color-selector-icon-size);
+    height: var(--pencil-menu-color-selector-icon-size);
+    margin: auto;
+}
+
+.pencil-thickness-selector {
+    display: flex;
+    flex-direction: row;
+    padding: var(--pencil-menu-thickness-selector-padding);
+}
+
+.pencil-thickness-option {
+    background-color: var(--pencil-menu-thickness-selector-bg-color);
+    border: 0;
+    border-radius: var(--pencil-menu-thickness-selector-border-radius);
+    width: var(--pencil-menu-thickness-selector-button-size);
+    height: var(--pencil-menu-thickness-selector-button-size);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pencil-thickness-option:hover {
+    background-color: var(--pencil-menu-thickness-selector-bg-color-hover);
+}
+
+.pencil-thickness-option.active {
+    background-color: var(--pencil-menu-thickness-selector-bg-color-active);
+}
+
+.pencil-thickness-icon {
+    width: var(--pencil-menu-thickness-selector-icon-size);
+}
+
+.pencil-thickness-lowest-icon {
+    height: 3px;
+}
+
+.pencil-thickness-medium-icon {
+    height: 5px;
+}
+
+.pencil-thickness-highest-icon {
+    height: 7px;
+}

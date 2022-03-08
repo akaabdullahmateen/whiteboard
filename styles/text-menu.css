@@ -1,0 +1,113 @@
+.text-menu {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    box-shadow: 0 0 0 1px #0000001a, 0 3px 16px #00000014, 0 2px 6px 1px #00000017;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: max-content;
+    height: var(--menu-size-default);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg-color-default);
+    border: 1px solid var(--border-color-default);
+}
+
+.menu-title {
+    width: var(--menu-size-default);
+    height: var(--menu-size-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--menu-color-default);
+    border: none;
+    outline: none;
+    border-right: 1px solid var(--border-color-default);
+}
+
+.font-family-button {
+    width: 200px;
+    height: var(--menu-size-default);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    border-right: 1px solid var(--border-color-default);
+    background-color: var(--bg-color-default);
+    color: var(--menu-color-default);
+    transition: 0.2s;
+}
+
+.font-family-button:hover {
+    color: var(--menu-color-hover);
+}
+
+.font-size-input {
+    width: 60px;
+    height: var(--menu-size-default);
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    color: var(--menu-color-default);
+}
+
+.menu-button {
+    width: var(--menu-size-default);
+    height: var(--menu-size-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--bg-color-default);
+    color: var(--menu-color-default);
+    transition: 0.2s;
+}
+
+.menu-button svg {
+    color: inherit;
+}
+
+.menu-button:hover {
+    color: var(--menu-color-hover);
+}
+
+.menu-button:active {
+    color: var(--menu-color-hover);
+}
+
+.button {
+    width: var(--button-size-default);
+    height: var(--button-size-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--bg-color-default);
+    color: var(--fg-color-default);
+    transition: 0.2s;
+}
+
+.button svg {
+    color: inherit;
+}
+
+.button:hover {
+    color: var(--hover-color-default);
+}
+
+.button:active {
+    color: var(--hover-color-default);
+}
+
+.icon {
+    width: var(--icon-size-default);
+    height: var(--icon-size-default);
+}
