@@ -57,12 +57,12 @@ function resetSettings() {
 }
 
 function applySettings() {
-    snap = document.getElementById("grid-snap").value;
-    rotateAngle = document.getElementById("rotate-snap").value;
-    pasteOffset = document.getElementById("paste-offset").value;
-    smallThickness = document.getElementById("small-thickness-input").value;
-    mediumThickness = document.getElementById("medium-thickness-input").value;
-    largeThickness = document.getElementById("large-thickness-input").value;
+    snap = parseInt(document.getElementById("grid-snap").value);
+    rotateAngle = parseInt(document.getElementById("rotate-snap").value);
+    pasteOffset = parseInt(document.getElementById("paste-offset").value);
+    smallThickness = parseInt(document.getElementById("small-thickness-input").value);
+    mediumThickness = parseInt(document.getElementById("medium-thickness-input").value);
+    largeThickness = parseInt(document.getElementById("large-thickness-input").value);
 }
 
 function validateSettingsInput(event) {
