@@ -1,4 +1,4 @@
-# akaAbdullahMateen.github.io
+# Whiteboard
 
 An attempt to make a beautiful whiteboard.
 The app is incomplete, a lot of things do not work so far.
